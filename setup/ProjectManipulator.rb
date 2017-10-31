@@ -61,7 +61,7 @@ module Project
 			target.headers_build_phase.remove_file_reference(file_ref) 
 			# remove frome group
 			group = @project.main_group.find_subpath(File.join("Sources"), true)
-			p group.files
+			
 			file_ref = group.files.find { |ref| ref.path.to_s.end_with?("PROJECT.h")}
 			file_ref.remove_from_project
 
