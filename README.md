@@ -30,15 +30,15 @@ This will generate your project directory in `pod-carthage-template`
 
 If your project doesn't depend on any other third party libraries, the table of contents will look like this:
 
-<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-165639@2x.png" width="300" height="219">
+<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-165639@2x.png" width="454" height="331">
 
 <img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-165703.png">
 
 If your project depends on some third party libraries, it will produce a `xcworkspace`: 
 
-<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170251@2x.png" width="300" height="224">
+<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170251@2x.png" width="460" height="344">
 
-<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170312@2x.png" width="200" height="224">
+<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170312@2x.png">
 
 ## Other things
 
