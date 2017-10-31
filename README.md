@@ -38,7 +38,7 @@ If your project depends on some third party libraries, it will produce a `xcwork
 
 <img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170251@2x.png" width="460" height="344">
 
-<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170312@2x.png">
+<img src="http://ojx1pmrk7.bkt.clouddn.com/WX20171031-170312@2x.png" width="277" height="310">
 
 ## Other things
 
