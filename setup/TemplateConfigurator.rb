@@ -86,6 +86,8 @@ module Project
 				:configurator => self,
 				:xcodeproj_path => project_folder + "/#{project_name}.xcodeproj"
 				}).run
+
+			@message_bank.farewell_message
 			
 		end
 

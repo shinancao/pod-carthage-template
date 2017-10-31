@@ -73,6 +73,21 @@ module Project
 				run_command('git config user.email "' + answer + '"')
 			end
 		end
+
+		def farewell_message
+			puts ""
+
+      		puts " Ace! you're ready to go!"
+      		puts " We will start you off by opening your project in Xcode"
+      		project_name = @configurator.project_name
+      		proj_path = project_name + "/#{project_name}.xcodeproj"
+      		workspace_path = project_name + "/#{project_name}.xcworkspace"
+      		if File.exist?(workspace_path)
+      			run_command "open '#{workspace_path}'"
+      		else
+      			run_command "open '#{proj_path}'"
+      		end
+		end
 	end
 	
 end
