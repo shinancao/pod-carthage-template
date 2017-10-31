@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  PROJECTDemo
 //
-//  Created by zhangnan on 2017/10/10.
-//  Copyright © 2017年 PROJECT_OWNER. All rights reserved.
+//  Created by PROJECT_OWNER on TODAYS_DATE.
+//  Copyright © TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
 import UIKit
