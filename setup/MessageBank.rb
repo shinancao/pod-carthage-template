@@ -38,7 +38,7 @@ module Project
 
 		def run_setup_questions
 			puts yellow_bang + "Before you can create a new library we need to setup your git credentials."
-			puts "user.name" + @configurator.user_name
+			
 			unless  @configurator.user_name.length > 0
 				puts "\n What is your name? "
 				answer = ""
@@ -54,8 +54,7 @@ module Project
 				puts green_bang + "Setting your name in git to " + answer
 				run_command('git config user.name "' + answer + '"')
 			end
-			
-			puts "user.email" + @configurator.user_email
+		
 			unless @configurator.user_email.length > 0
 				puts "\n What is your email?"
 				answer = ""
