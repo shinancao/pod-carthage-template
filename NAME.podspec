@@ -19,6 +19,5 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/**/*"
   s.frameworks   = "UIKit", "Foundation" 
   s.requires_arc = true
-  s.dependency "Kingfisher", "~> 3.0"
   
 end
