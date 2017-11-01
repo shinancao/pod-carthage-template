@@ -88,7 +88,7 @@ module Project
 			file = File.open(project_folder + "/Cartfile")
 			file.each_line do |line|
 				if /^github/ =~ line
-					/\/(.*)\"/ =~ line 
+					/\/(.*?)\"/ =~ line 
 					libname = $1
 					
 					unless /\"\s(.+)\n?/ =~ line
@@ -103,6 +103,8 @@ module Project
 						
 						if /^==\s(.*)/ =~ ver
 							dependencys << "  s.dependency " + "\"#{libname}\"\, " + "\"#{$1}\"\n"
+						elsif /\".*\"/ =~ ver
+							dependencys << "  s.dependency " + "\"#{libname}\"\, :branch => " + ver
 						else
 							dependencys << "  s.dependency " + "\"#{libname}\"\, " + "\"#{ver}\"\n"
 						end
