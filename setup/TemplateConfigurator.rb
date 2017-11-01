@@ -87,6 +87,10 @@ module Project
 				:xcodeproj_path => project_folder + "/#{project_name}.xcodeproj"
 				}).run
 
+			Dir.chdir(project_folder) do
+				add_file_to_git_repo
+			end
+			
 			@message_bank.farewell_message
 			
 		end
@@ -94,6 +98,11 @@ module Project
 		def reinitialize_git_repo
 			`rm -rf .git`
 			`git init`
+		end
+
+		def add_file_to_git_repo
+			`git add -A`
+			`git commit -m 'initialize commit'`
 		end
 
 		def move_project_dir framework
